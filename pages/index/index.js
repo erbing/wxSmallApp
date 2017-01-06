@@ -41,11 +41,24 @@ Page({
       })
     })
   },
-  alertSome: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  alertSome1: function() {
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })   
   },
+  alertSome2: function() {
+    wx.showModal({
+      title: '提示',
+      content: '这是一个模态弹窗',
+      success: function(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        }
+      }
+    })    
+  },  
   go: function(e) {
       console.log(e.target);
       wx.navigateTo({
