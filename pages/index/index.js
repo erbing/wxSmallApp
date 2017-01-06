@@ -3,8 +3,26 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello Worlds',
-    userInfo: {}
+    motto: 'Hello World 哥',
+    userInfo: {},
+    array: [
+      {
+        name: '首页',
+        url: 'index'
+      },
+      {
+        name: '课程',
+        url: 'course'
+      },
+      {
+        name: '机构',
+        url: 'groups'
+      },
+      {
+        name: '我的',
+        url: 'vip'
+      },
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -27,5 +45,11 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  go: function(e) {
+      console.log(e.target);
+      wx.navigateTo({
+        url: '../'+ e.target.id + '/'+ e.target.id
+      })
   }
 })

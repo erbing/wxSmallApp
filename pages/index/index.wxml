@@ -8,3 +8,11 @@
     <text class="user-motto" bindtap="alertSome">{{motto}}</text>
   </view>
 </view>
+
+<view class="bottom">
+   <view class="bottom-nav">
+        <view wx:for="{{array}}" class="item" id="{{item.url}}" bindtap="go">
+            {{item.name}}
+        </view>
+   </view>
+</view>

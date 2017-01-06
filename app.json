@@ -1,12 +1,15 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/course/course",
+    "pages/groups/groups",
+    "pages/vip/vip",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "润·教育",
     "navigationBarTextStyle":"#fff"
   }
 }
