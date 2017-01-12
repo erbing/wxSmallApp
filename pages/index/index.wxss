@@ -1,4 +1,17 @@
 /**index.wxss**/
+image {
+    width: 100%;
+}
+swiper{
+  height: 300px;
+}
+.indicator-color{
+  color: rgba(0, 0, 0, .3)
+}
+.indicator-active-color{
+  color: rgba(0, 0, 0, .23)
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

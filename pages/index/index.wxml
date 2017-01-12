@@ -1,9 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
+<swiper indicator-dots="{{indicatorDots}}" style="width: 100%"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="300px"/>
+    </swiper-item>
+  </block>
+</swiper>
   <view class="usermotto">
     <text class="user-motto" bindtap="alertSome1">1、{{motto}}</text>
   </view>
