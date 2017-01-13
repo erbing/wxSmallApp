@@ -3,13 +3,29 @@ image {
     width: 100%;
 }
 swiper{
-  height: 300px;
+  height: 240px;
 }
+
 .indicator-color{
   color: rgba(0, 0, 0, .3)
 }
+
 .indicator-active-color{
   color: rgba(0, 0, 0, .23)
+}
+
+navigator {
+  height:auto;
+  width:25%;
+  display:block;
+  float:left;
+  text-align:center;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  background: #eee;
+  position: absolute;
+  bottom: 0px;
 }
 
 .userinfo {
@@ -57,3 +73,6 @@ swiper{
     font-size: 14px;
 }
 
+.btn-area{
+  width: 100%;
+}
